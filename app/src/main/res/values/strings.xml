@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Android_GUI</string>
+    <string name="splashScreenImage">Splash Screen Image</string>
+    <string name="senderDetailsText">d</string>
+    <string name="emailHintText">Email</string>
+    <string name="nameHintText">Full Name</string>
+    <string name="contactHintText">Contact\nInformation</string>
+    <string name="countryHintText">Country</string>
+    <string name="addressHintText">ADDRESS</string>
+
+    <string name="reviewInformationText">Review Informatin</string>
+    <string name="nameLabel">Name</string>
+    <string name="countryLabel">Country</string>
+    <string name="addressLabel">Address</string>
+    <string name="contactLabel">Contact Info</string>
+    <string name="FAB_Label_description">Add New Record</string>
+
+    <string name="nextButtonText">Next</string>
+
+
+
+</resources>

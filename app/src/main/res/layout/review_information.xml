@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgClr"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/reviewInformationText"
+        android:textSize="30sp"
+        android:textColor="@color/senderDetailstxtclr"
+        android:background="@color/senderDetailsbgclr"
+        android:id="@+id/senderDetailsHeading"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/senderDetailsHeading"
+        >
+        
+        <TextView
+            android:text="@string/nameLabel"
+            style="@style/CustomTextViewStyle"
+            />
+        <TextView
+            style="@style/CustomTextViewStyle"
+            android:text="@string/countryLabel"
+            />
+        <TextView
+            style="@style/CustomTextViewStyle"
+            android:text="@string/addressLabel"
+            />
+        <TextView
+            style="@style/CustomTextViewStyle"
+            android:text="@string/contactLabel"
+            />
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/FAB_Label_description"
+        android:layout_margin="20dp"
+        android:src="@drawable/fab_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="@color/senderDetailsbgclr"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
