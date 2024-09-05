@@ -2,4 +2,5 @@
 <resources>
     <dimen name="margin_top_standard_inside_form">20dp</dimen>
     <dimen name="senderFormMarginLeftRight">30dp</dimen>
+    <dimen name="arrows_up_down_margin">10dp</dimen>
 </resources>
