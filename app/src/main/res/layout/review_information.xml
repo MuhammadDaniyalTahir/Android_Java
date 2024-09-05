@@ -1,61 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reviewInformationParentConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bgClr"
-    >
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/senderDetailsHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/senderDetailsbgclr"
         android:padding="10dp"
         android:text="@string/reviewInformationText"
-        android:textSize="30sp"
         android:textColor="@color/senderDetailstxtclr"
-        android:background="@color/senderDetailsbgclr"
-        android:id="@+id/senderDetailsHeading"
+        android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
+
         />
+
+    <!--That contains all sub-layouts of records entered-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/senderDetailsHeading"
-        >
-        
-        <TextView
-            android:text="@string/nameLabel"
-            style="@style/CustomTextViewStyle"
-            />
-        <TextView
-            style="@style/CustomTextViewStyle"
-            android:text="@string/countryLabel"
-            />
-        <TextView
-            style="@style/CustomTextViewStyle"
-            android:text="@string/addressLabel"
-            />
-        <TextView
-            style="@style/CustomTextViewStyle"
-            android:text="@string/contactLabel"
-            />
+        android:id="@+id/parentLayoutReviewInformation">
+
+        <!--That contains three components. Every time added when fab pressed-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/nameLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/countryLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/addressLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/contactLabel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                    app:tint="@color/senderDetailsbgclr" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/up_arrow"
+                    app:tint="@color/senderDetailsbgclr" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/nameLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/countryLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/addressLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/contactLabel" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--fjdjfkldjfldjf;ajfjdljfjdafj;djfadsf;djs;fdsf-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/nameLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/countryLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/addressLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/contactLabel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                    app:tint="@color/senderDetailsbgclr" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/up_arrow"
+                    app:tint="@color/senderDetailsbgclr" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/nameLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/countryLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/addressLabel" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="@string/contactLabel" />
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
-
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/FAB_Label_description"
         android:layout_margin="20dp"
+        android:contentDescription="@string/FAB_Label_description"
         android:src="@drawable/fab_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:backgroundTint="@color/senderDetailsbgclr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -47,7 +47,7 @@
             android:inputType="textPersonName"
             android:hint="@string/nameHintText"
             android:padding="15dp"
-            android:id="@+id/receiverFullName"
+            android:id="@+id/receiverName"
             />
         <EditText
             android:layout_width="match_parent"
